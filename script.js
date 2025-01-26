@@ -59,7 +59,10 @@ document.getElementById('reset-btn').addEventListener('click', resetLevel);
 document.getElementById('back-btn').addEventListener('click', goBackToWelcome);
 document.getElementById('info-btn').addEventListener('click', showInfo);
 document.getElementById('back-to-welcome-btn').addEventListener('click', goBackToWelcome);
-document.getElementById('exit-btn').addEventListener('click', exitGame);
+//document.getElementById('exit-btn').addEventListener('click', exitGame);
+document.getElementById('exit-btn').addEventListener('click', () => {
+    window.close();
+    });
 playAgainBtn.addEventListener('click', playAgain);
 
 
@@ -259,9 +262,9 @@ function showInfo() {
     infoScreen.style.display = "block";
 }
 
-function exitGame() {
-    window.close(); // Close the game (works for certain desktop apps)
-}
+//function exitGame() {
+  //  window.close(); // Close the game (works for certain desktop apps)
+//}
 
 
 function endLevel() {
